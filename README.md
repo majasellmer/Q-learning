@@ -27,5 +27,5 @@ choice of parameters which can be adjusted:
 * learning rates: alpha[action] = 1/(num_visits[current_state][action]+1)
 * discount factor: gamma = 1
 * probability of being thrown off by the wind: p = 0.1
-* cost per step distributed according to np.random.normal(-1,0.1)
+* cost per step: distributed according to np.random.normal(-1,0.1)
 * reward for reaching goal state: 14
