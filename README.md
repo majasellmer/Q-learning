@@ -3,14 +3,17 @@
 A supplement to the Bachelor thesis "On convergence of Q-learning algorithms in reinforcement learning".
 
 code written using:
-Python version 3.7.9
-matplotlib version 3.5.1
-numpy version 1.21.5
+* Python version 3.7.9
+* matplotlib version 3.5.1
+* numpy version 1.21.5
 
 This example is inspired by but different from the Frozen Lake environment provided in OpenAI's Gymnasium.
 
 problem setup:
-A maze of 5x5 squares, some of which contain obstacles/walls. The goal is for the agent to learn to solve the labyrinth in as few steps as possible using Q-learning. Each state corresponds to one state in the process, we shall number them from left to right and top to bottom from 0 to 24. The agent starts out in the top left corner, and the bottom right corner is the absorbing state. The possible actions at each step are a subset of the actions {left, right, up, down}, with the condition that the agent cannot step outside the board or into a wall. There is a strong south wind, so there is a chance of being pushed one square up or unable to move, unless there is a wall shielding the agent from the south. Moving to the goal state 24 is exempt from this, i.e. moving right from state 23 or down from state 19 always succeeds.
+* A maze of 5x5 squares, some of which contain obstacles/walls.
+* The goal is for the agent to learn to solve the labyrinth in as few steps as possible using Q-learning.
+* Each state corresponds to one state in the process, we shall number them from left to right and top to bottom from 0 to 24. The agent starts out in the top left corner, and the bottom right corner is the absorbing state.
+* The possible actions at each step are a subset of the actions {left, right, up, down}, with the condition that the agent cannot step outside the board or into a wall. There is a strong south wind, so there is a chance of being pushed one square up or unable to move, unless there is a wall shielding the agent from the south. Moving to the goal state 24 is exempt from this, i.e. moving right from state 23 or down from state 19 always succeeds.
 
 resulting plots:
 * the original maze
